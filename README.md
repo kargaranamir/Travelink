@@ -1,3 +1,3 @@
 # Travelink
-Software Engeenering Project
+Software Engineering Project
 ![Screenshot](https://github.com/mdarakhshan/Travelink/blob/master/Presentation/Logo_Travellink.png "Logo")
