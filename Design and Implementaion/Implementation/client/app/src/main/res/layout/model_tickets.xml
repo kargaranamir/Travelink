@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:textColor="#640224"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:text="title of question is here..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#22686868"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="#E2E2E2"
+                app:expansion_layout="@id/body"
+                android:id="@+id/header"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="See your questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:layout_marginBottom="10dp"
+                android:background="#E9E9E9"
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/text_question"
+                    android:text="your question is ...."
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:text="Status: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:text="in progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:elevation="8dp"
+                android:padding="10dp"
+                android:background="#BBFDBD"
+                app:expansion_layout="@id/answer_body"
+                android:id="@+id/answer_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="Help Center Answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+
+                android:background="#E9E9E9"
+                android:id="@+id/answer_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="8dp"
+                    android:id="@+id/text_answer"
+                    android:layout_marginLeft="5dp"
+                    android:text="No Answer yet..."
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

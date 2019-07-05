@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#ededed"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:background="@mipmap/banner_signup_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+<RelativeLayout
+    android:layout_marginTop="160dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:background="@mipmap/white_back"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#07698D"
+            android:id="@+id/alert"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+
+            android:id="@+id/field"
+            android:layout_margin="30dp"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#666"
+            app:mtf_image="@mipmap/numbers1">
+
+            <EditText
+                android:maxLength="11"
+                android:inputType="number"
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+        <Button
+            android:id="@+id/letsgobutton"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:background="#0CA80C"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="          Let's Go...          "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <com.app.progresviews.ProgressWheel
+            app:percentage="0"
+            android:layout_centerHorizontal="true"
+            app:barWidth="13dp"
+            android:id="@+id/progress"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/man_pro"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:contentDescription="man_profile in login page" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

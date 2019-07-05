@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#009688</color>
+    <color name="alertTextColor">#07698D</color>
+    <color name="White">#FFFFFF</color>
+    <color name="answer">#003601</color>
+    <color name="question">#4D001A</color>
+
+    <color name="InProgress">#FF5722</color>
+    <color name="closed">#E91E63</color>
+    <color name="open">#0C9E0C</color>
+
+</resources>
