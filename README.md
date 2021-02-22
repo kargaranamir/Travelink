@@ -1,3 +1,3 @@
 # Travelink
 Software Engineering Project
-![Screenshot](https://github.com/mdarakhshan/Travelink/blob/master/Presentation/Logo_Travellink.png "Logo")
+![Screenshot](./Presentation/Logo_Travellink.png "Logo")
